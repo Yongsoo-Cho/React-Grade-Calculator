@@ -1,0 +1,84 @@
+.calculator-container{
+    overflow: scroll;
+    height: 100vh;
+}
+
+.header{
+    background-color: black;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 15px;
+    margin-bottom: 0px;
+}
+.header h1{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    margin-left: 20px;
+}
+
+.operations-container{
+    height: 82vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.operations-container form{
+    background-color: black;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 15px;
+}
+.operations-container button{
+    padding: 10px;
+    border-radius: 15px;
+    background-color: white;
+    min-width: 100px;
+    border: none;
+    font-size: 15px;
+    font-weight: bolder;
+}
+.operations-container button:hover{
+    background-color: lightgrey;
+}
+.operations-container button:hover{
+    color: black;
+}
+.operations-container input{
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 15px;
+}
+.operations-container input:focus{
+    outline: none;
+}
+.operations-submit{
+    background-color: rgb(195, 195, 195);
+    padding: 10px;
+    padding-left: 85px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.results-container{
+    background-color: black;
+    border-radius: 15px;
+    margin: 15px;
+}
+
+.results-container p{
+    margin-left: 30px;
+    font-size: 30px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    display: inline-block;
+}
+.results-container h1{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: -50px;
+    font-size: 200px;
+}
