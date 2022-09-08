@@ -23,17 +23,17 @@ const Calculator = () => {
             valuesArray.reduce( (a,b) => +a + +b, 0 ) / grades.length
         );
 
-        if(97<=average<=100){ setLetter('A+'); }
-        else if(93<=average<=96){ setLetter('A'); }
-        else if(90<=average<=92){ setLetter('A-'); }
-        else if(87<=average<=89){ setLetter('B+'); }
-        else if(83<=average<=86){ setLetter('B'); }
-        else if(80<=average<=82){ setLetter('B-'); }
-        else if(77<=average<=79){ setLetter('C+'); }
-        else if(73<=average<=76){ setLetter('C'); }
-        else if(70<=average<=72){ setLetter('C-'); }
-        else if(67<=average<=69){ setLetter('D+'); }
-        else if(65<=average<=66){ setLetter('D'); }
+        if(97<=average && average<=100){ setLetter('A+'); }
+        else if(93<=average && average<=96){ setLetter('A'); }
+        else if(90<=average && average<=92){ setLetter('A-'); }
+        else if(87<=average && average<=89){ setLetter('B+'); }
+        else if(83<=average && average<=86){ setLetter('B'); }
+        else if(80<=average && average<=82){ setLetter('B-'); }
+        else if(77<=average && average<=79){ setLetter('C+'); }
+        else if(73<=average && average<=76){ setLetter('C'); }
+        else if(70<=average && average<=72){ setLetter('C-'); }
+        else if(67<=average && average<=69){ setLetter('D+'); }
+        else if(65<=average && average<=66){ setLetter('D'); }
         else if(average<=65){ setLetter('E/F'); }
     };
 
@@ -67,7 +67,7 @@ const Calculator = () => {
 
             <div className='results-container'>
                 <p>Your average grade is</p>
-                <h1>{Number(average).toFixed(0)}</h1>
+                <h1>{Number(average).toFixed(2)}</h1>
 
                 <p>{letter==='' ? '' : Number(average).toFixed(2)+'%'}</p>
                 <p>{letter}</p>
